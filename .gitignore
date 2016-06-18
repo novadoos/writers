@@ -1,0 +1,18 @@
+# Custom #
+######################
+.idea
+coverage
+node_modules
+unit_coverage
+bower_components
+typings
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
