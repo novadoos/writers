@@ -1,0 +1,13 @@
+{
+  "preset": "google",
+  "maximumLineLength": {
+    "value": 120
+  },
+  "requireCurlyBraces": [
+    "for",
+    "while",
+    "do",
+    "try",
+    "catch"
+  ]
+}

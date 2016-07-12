@@ -1,5 +1,7 @@
+'use strict';
+
 if ('production' === process.env.NODE_ENV)
-    require('newrelic');
+  require('newrelic');
 
 const PORT = process.env.PORT || 3333;
 
@@ -20,10 +22,10 @@ Routes.init(app, express.Router());
 const opts = {
   key: fs.readFileSync(__dirname + '/cert/server.key'),
   cert: fs.readFileSync(__dirname + '/cert/server.crt')
-}
+};
 
 https.createServer(opts, app)
-     .listen(PORT, () => {
-       console.log(`up and running @: ${os.hostname()} on port: ${PORT}`);
-       console.log(`enviroment: ${process.env.NODE_ENV}`);
-     });
+  .listen(PORT, () => {
+    console.log(`up and running @: ${os.hostname()} on port: ${PORT}`);
+    console.log(`enviroment: ${process.env.NODE_ENV}`);
+  });

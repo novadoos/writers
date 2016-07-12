@@ -4,14 +4,13 @@ import StaticDispatcher from '../commons/static/index';
 
 
 export default class Routes {
-   static init(app, router) {
-     TodoRoutes.init(router);
-     
-     router
-       .route('*')
-       .get(StaticDispatcher.sendIndex);
-     
+  static init(app, router) {
+    TodoRoutes.init(router);
 
-     app.use('/', router);
-   }
+    router
+      .route('*')
+      .get(StaticDispatcher.sendIndex);
+
+    app.use('/', router);
+  }
 }
